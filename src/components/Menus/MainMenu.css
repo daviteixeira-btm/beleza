@@ -1,0 +1,5 @@
+.navbar.active {
+    top: 0;
+    transition: 0.5s;
+    background: #fff;
+}

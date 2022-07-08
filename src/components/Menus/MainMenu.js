@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./MainMenu.css";
 
 import { 
     Box,
@@ -28,6 +29,7 @@ const pages = [
 function MainMenu() {
 
     const [open, setOpen] = useState(false);
+    const [navbar, setNavbar] = useState(false);
 
     const getList = () => (
         <div style={{ width: 250 }} onClick={() => setOpen(false)}>
@@ -39,6 +41,16 @@ function MainMenu() {
         </div>
     );
 
+    const changeBackground = () => {
+        if(window.scrollY >= 80){
+            setNavbar(true);
+        }else {
+            setNavbar(false);
+        }
+    };
+
+    window.addEventListener('scroll', changeBackground);
+
     return (
         <Box component="header">
             <Drawer open={open} anchor={"left"} onClose={() => setOpen(false)}>
@@ -46,9 +58,10 @@ function MainMenu() {
             </Drawer>
             
             <AppBar 
-                component="nav" 
+                component="nav"
+                className={navbar ? "navbar active" : "navbar"}
                 color="transparent"
-                sx={{border: "1px solid red", top: "2rem", boxShadow: 0, p: 2}}
+                sx={{top: "2rem", boxShadow: 0, p: 2}}
             >
                 <Container maxWidth="lg">
                     <Toolbar component="ul" sx={{listStyle: "none"}}>
