@@ -14,6 +14,7 @@ import {
     ListItemText,
 } from "@mui/material";
 
+
 import  MenuIcon from '@mui/icons-material/Menu';
 
 const pages = [
@@ -39,14 +40,18 @@ function MainMenu() {
     );
 
     return (
-        <Box component="nav">
+        <Box component="header">
             <Drawer open={open} anchor={"left"} onClose={() => setOpen(false)}>
                 {getList()}
             </Drawer>
             
-            <AppBar color="transparent" sx={{border: "none", top: "2rem", boxShadow: 0, p: 2}}>
+            <AppBar 
+                component="nav" 
+                color="transparent"
+                sx={{border: "1px solid red", top: "2rem", boxShadow: 0, p: 2}}
+            >
                 <Container maxWidth="lg">
-                    <Toolbar component="ul">
+                    <Toolbar component="ul" sx={{listStyle: "none"}}>
                         <Hidden smUp>
                             <IconButton
                                 onClick={() => setOpen(true)}
