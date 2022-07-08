@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 
 /* Image imports */
 import Woman from "../../images/pexels-andrea-piacquadio-small.png";
@@ -7,49 +7,51 @@ import Woman from "../../images/pexels-andrea-piacquadio-small.png";
 function FirstSection(){
 
     return (
-        <Box 
+        <Grid
             mt={5}
-            display="flex"
-            component="section" 
-            justifyContent="space-between"
+            container
+            direction="row"
+            alignItems="center"
+            component="section"
+            justifyContent="space-around"
             sx={{bgcolor: "#ffdde6", borderRadius: "1rem"}}
         >
-            <Box 
-                display="flex"
-                component="div"
-                justifyContent="center"
-                sx={{width: "70rem", marginTop: "4.1rem"}} 
-            >
+            <Grid item xl={4} lg={4} md={6} sm={12} xs={12} display="flex" justifyContent="center">
                 <Box 
                     sx={{
-                        width: "20rem", 
-                        margin: "2rem",
-                        marginBottom: 0,
-                        height: "20rem",
-                        marginTop: "4rem",
+                        width: "16rem", 
+                        height: "16rem",
+                        marginTop: "9rem",
                         bgcolor: "#FE9FA6",
-                        borderRadius: "50%", 
-                        position: "relative"
+                        borderRadius: "50%",
                     }}
                 />
                 <Box
                     src={Woman}
                     component="img"
-                    sx={{position: "absolute", top: "8rem"}}
+                    sx={{
+                        
+                        top: "9.9rem",
+                        width: "18rem", 
+                        maxWidth: "100%",
+                        position: "absolute", 
+                    }}
                 />
-            </Box>
-            <Box component="div">
+            </Grid>
+            <Grid 
+                item xl={8} lg={8} md={6} sm={12} xs={12}
+            >
                 <Typography 
                     p={2}
                     variant="h1" 
                     align="center" 
-                    fontSize="3rem" 
-                    sx={{color: "#2c2525", fontWeight: "bold", marginTop: "8rem"}}
+                    fontSize="2.5rem" 
+                    sx={{color: "#2c2525", fontWeight: "bold"}}
                 >
                     Tudo Sobre as Técnicas Mais Atuais de Alongamento de Unhas!
                 </Typography>
-            </Box>
-        </Box>
+            </Grid>
+        </Grid>
     )
 }
 
