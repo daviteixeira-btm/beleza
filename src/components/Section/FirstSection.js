@@ -14,7 +14,7 @@ function FirstSection(){
             alignItems="center"
             component="section"
             justifyContent="space-around"
-            sx={{bgcolor: "#ffdde6", borderRadius: "1rem"}}
+            sx={{bgcolor: "#ffdde6", borderRadius: "1rem 1rem 0 0"}}
         >
             <Grid item xl={4} lg={4} md={6} sm={12} xs={12} display="flex" justifyContent="center">
                 <Box 
