@@ -18,7 +18,7 @@ function CoursesSection() {
       container
       direction="column"
       component="section"
-      sx={{ border: "1px solid", borderRadius: "0 0 1rem 1rem" }}
+      sx={{ borderRadius: "0 0 1rem 1rem" }}
     >
       <Grid item p={4}>
         <Typography
@@ -48,7 +48,7 @@ function CoursesSection() {
         <Grid
           item
           lg={12}
-          sx={{ border: "1px solid", width: "100%", background: "#a6d0e0" }}
+          sx={{ width: "100%", background: "#a6d0e0" }}
           p={2}
         >
           <Grid
@@ -74,17 +74,25 @@ function CoursesSection() {
         </Grid>
       </Hidden>
 
-      <Grid item p={1} m={2} sx={{ border: "1px solid" }}>
+      <Grid item p={1} m={2}>
         <Grid
           container
           sx={{
             display: "flex",
             flexDirection: "row",
-            border: "1px solid red",
           }}
         >
-          <Grid item p={1} lg={3} sx={{ border: "1px solid red", width: "100%", display: "flex", justifyContent: "center" }}>
-            <Card sx={{ border: "1px solid", maxWidth: "16rem"}}>
+          <Grid
+            item
+            p={1}
+            lg={3}
+            sx={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Card sx={{ maxWidth: "16rem" }}>
               <CardMedia component="img" image={curso} />
             </Card>
           </Grid>
@@ -92,9 +100,9 @@ function CoursesSection() {
             item
             p={1}
             lg={5}
-            sx={{ alignSelf: "center", border: "1px solid red" }}
+            sx={{ alignSelf: "center" }}
           >
-            <Box sx={{ border: "1px solid blue" }}>
+            <Box>
               <Typography
                 gutterBottom
                 variant="h3"
@@ -135,12 +143,11 @@ function CoursesSection() {
             item
             lg={2}
             alignSelf="center"
-            sx={{ border: "1px solid", width: "100%" }}
+            sx={{ width: "100%" }}
           >
             <Box
               p={1}
               sx={{
-                border: "1px solid blue",
                 display: "flex",
                 justifyContent: "center",
               }}
