@@ -1,8 +1,14 @@
 import React from "react";
 import { Grid, Hidden, Typography } from "@mui/material";
 
-import curso from "../../images/escola-designer-de-unhas.png";
 import Product from "../Products/Product";
+
+import cursoEspecializacaoEmCutilagemParaManicure from "../../images/especializacao-em-cutilagem-para-manicure.png";
+import cursoEscolaDesignerDeUnhas from "../../images/escola-designer-de-unhas.png";
+import cursoAlongamentoDeUnhas from "../../images/curso-alongamento-de-unhas.png";
+import cursoDeManicure from "../../images/curso-de-manicure.png";
+import cursoEspecialistaEmDesignDeUnhas from "../../images/curso-especialista-em-designer-de-unhas.png";
+import cursoDeCutilagemRussa from "../../images/curso-de-cutilagem-russa.png";
 
 function CoursesSection() {
   return (
@@ -62,7 +68,45 @@ function CoursesSection() {
       </Hidden>
 
       <Product
-        image={curso}
+        image={cursoEspecializacaoEmCutilagemParaManicure}
+        titulo="Curso de Cutilagem para Manicures com Faby Cardoso - Especialização"
+        texto="Curso de especialização em cutilagem para manicure 
+        e pedicure, válido para iniciantes e manicures com dificuldades 
+        ou em busca de aperfeiçoamento na profissão!"
+        nota="5.0"
+        ratingValue={5.0}
+        linkPage="https://go.hotmart.com/A72954398E"
+      />
+
+      <Product
+        image={cursoEspecialistaEmDesignDeUnhas}
+        titulo="Especialista em Designer de Unhas"
+        texto="O curso online de alongamento de unhas 
+        Especialista em Designer de Unhas é um curso 
+        totalmente completo para você que quer aprender 
+        do zero como fazer unhas maravilhosas com todos 
+        os formatos e modelos de unhas."
+        nota="4.9"
+        ratingValue={4.9}
+        linkPage="https://go.hotmart.com/U72955347K"
+      />
+
+      <Product
+        image={cursoDeManicure}
+        titulo="Curso de Manicure e Pedicure (Iniciante) Faby Cardoso"
+        texto="Nestas aulas de manicure da Faby Cardoso pode 
+        contar com vídeos 100% práticos onde irá aprender: 
+        Sobre cutículas mãos e pés; Unhas francêsinhas perfeitas 
+        nas mãos e nos pés; Como passar o esmalte nude sem manchar; 
+        Como tirar o borrado corretamente das unhas; Como colocar 
+        adesivos artesanais e muito mais...."
+        nota="4.8"
+        ratingValue={4.8}
+        linkPage="https://go.hotmart.com/K72955078N"
+      />
+
+      <Product
+        image={cursoEscolaDesignerDeUnhas}
         titulo="Escola Design de Unhas"
         texto="Muitas alunas estão colocando em prática as 
         TÉCNICAS ATUAIS DE ALONGAMENTO que estão aprendendo 
@@ -71,6 +115,31 @@ function CoursesSection() {
         nota="4.7"
         ratingValue={4.7}
         linkPage="https://go.hotmart.com/R72950783S"
+      />
+
+      <Product
+        image={cursoAlongamentoDeUnhas}
+        titulo="CURSO ALONGAMENTO DE UNHAS - COM PAOLA CHAVES"
+        texto="O Curso Completo Alongamento de Unhas com 
+        Paola Chaves possui 48 vídeo aulas exclusivas de 
+        altíssima qualidade onde a aluna aprenderá do zero 
+        a como fazer unhas de qualidade com aspecto de naturalidade."
+        nota="4.7"
+        ratingValue={4.7}
+        linkPage="https://go.hotmart.com/W72954815O"
+      />
+
+      <Product
+        image={cursoDeCutilagemRussa}
+        titulo="Curso de Cutilagem Russa + 6 Bônus"
+        texto="A cutilagem russa mal desembarcou no Brasil e 
+        já vem dando o que falar. A técnica, que abole o uso 
+        de alicates na hora de remover as cutículas das unhas, 
+        tem revolucionado o universo da manicure e causado frisson 
+        nos salões, inclusive os brasilienses."
+        nota="4.7"
+        ratingValue={4.7}
+        linkPage="https://go.hotmart.com/Y72955761M"
       />
     </Grid>
   );
