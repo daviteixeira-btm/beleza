@@ -1,28 +1,39 @@
 import React from "react";
 import {
   Grid,
-  Hidden,
-  Typography,
   List,
+  Hidden,
   ListItem,
+  Typography,
   ListItemText,
   ListItemIcon,
 } from "@mui/material";
+import Product from "../Products/Product";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 
-import Product from "../Products/Product";
+import cursoDeManicure 
+  from "../../images/curso-de-manicure.png";
 
-import cursoEspecializacaoEmCutilagemParaManicure from "../../images/especializacao-em-cutilagem-para-manicure.png";
-import cursoEscolaDesignerDeUnhas from "../../images/escola-designer-de-unhas.png";
-import cursoAlongamentoDeUnhas from "../../images/curso-alongamento-de-unhas.png";
-import cursoDeManicure from "../../images/curso-de-manicure.png";
-import cursoEspecialistaEmDesignDeUnhas from "../../images/curso-especialista-em-designer-de-unhas.png";
-import cursoDeCutilagemRussa from "../../images/curso-de-cutilagem-russa.png";
+import cursoEscolaDesignerDeUnhas 
+  from "../../images/escola-designer-de-unhas.png";
 
-function CoursesSection() {
+import cursoDeCutilagemRussa 
+  from "../../images/curso-de-cutilagem-russa.png";
+
+import cursoAlongamentoDeUnhas 
+  from "../../images/curso-alongamento-de-unhas.png";
+
+import cursoEspecialistaEmDesignDeUnhas 
+  from "../../images/curso-especialista-em-designer-de-unhas.png";
+
+import cursoEspecializacaoEmCutilagemParaManicure 
+  from "../../images/especializacao-em-cutilagem-para-manicure.png";
+
+function CoursesSection(){
+
   let data = new Date();
-  let mes = String(data.getMonth() + 1).padStart(2, "0");
   let ano = data.getFullYear();
+  let mes = String(data.getMonth() + 1).padStart(2, "0");
   let dataAtual = mes + "/" + ano;
 
   return (
@@ -35,17 +46,24 @@ function CoursesSection() {
         boxShadow: "1px 0px 2px 2px rgba(0, 0, 0, 0.2)",
       }}
     >
-      <Grid item p={4} sx={{ bgcolor: "#f9f9f9" }}>
+      <Grid 
+        item 
+        p={4} 
+        sx={{ 
+          bgcolor: "#f9f9f9" 
+        }}
+      >
         <Typography
           variant="h2"
           sx={{
+            color: "#0e3150",
             fontSize: "2rem",
-            textAlign: "center",
             fontWeight: "500",
-            color: "#0E3150",
+            textAlign: "center",
+            fontFamily: "Roboto"
           }}
         >
-          Conheça os principais Cursos online de manicure
+          Fizemos uma lista com os principais cursos online do mercado
         </Typography>
       </Grid>
 
@@ -53,14 +71,22 @@ function CoursesSection() {
         item
         px={2}
         py={1}
-        sx={{ bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: "Roboto" }}
+        sx={{
+          bgcolor: "#f9f9f9",
+        }}
       >
         <Typography
           variant="p"
-          sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "left" }}
+          sx={{
+            fontSize: "1rem",
+            color: "#0E3150",
+            textAlign: "left", 
+            fontWeight: "500",
+            fontFamily: "Roboto"
+          }}
         >
-          Existem inumeros cursos online disponiveis na internet sobre manicure,
-          o que torna dificil escolher qual comprar, certo? Como saber qual o
+          Existem inúmeros cursos online disponíveis na internet sobre manicure,
+          o que torna difícil escolher qual comprar, certo? Como saber qual o
           melhor? Nós te ajudamos!
         </Typography>
       </Grid>
@@ -69,11 +95,19 @@ function CoursesSection() {
         item
         px={2}
         py={1}
-        sx={{ bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: "Roboto" }}
+        sx={{
+          bgcolor: "#f9f9f9",
+        }}
       >
         <Typography
           variant="p"
-          sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "left" }}
+          sx={{
+            color: "#0e3150", 
+            fontSize: "1rem", 
+            fontWeight: "500", 
+            textAlign: "left",
+            fontFamily: "Roboto"
+          }}
         >
           Constantemente, fazemos a avaliação dos melhores cursos do mercado em
           nossa oferta de classificação:
@@ -84,7 +118,11 @@ function CoursesSection() {
         item
         px={4}
         py={1}
-        sx={{ bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: "Roboto" }}
+        sx={{  
+          color: "#0e3150",
+          bgcolor: "#f9f9f9",
+          fontFamily: "Roboto"
+        }}
       >
         <List>
           <ListItem disableGutters disablePadding>
@@ -97,7 +135,7 @@ function CoursesSection() {
             <ListItemIcon>
               <CheckBoxIcon sx={{ color: "#009d43" }} />
             </ListItemIcon>
-            <ListItemText primary="Todos os cursos tem garantia minima de 7 dias;" />
+            <ListItemText primary="Todos os cursos têm garantia mínima de 7 dias;" />
           </ListItem>
           <ListItem disableGutters disablePadding>
             <ListItemIcon>
@@ -112,24 +150,41 @@ function CoursesSection() {
         item
         px={2}
         py={1}
-        sx={{ bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: "Roboto" }}
+        sx={{ 
+          color: "#0e3150",
+          bgcolor: "#f9f9f9", 
+          fontFamily: "Roboto" 
+        }}
       >
         <Typography
           variant="p"
-          sx={{ fontSize: ".8rem", fontWeight: "500", textAlign: "left" }}
+          sx={{ 
+            fontSize: ".8rem", 
+            fontWeight: "500", 
+            textAlign: "left",
+            fontFamily: "Roboto"
+          }}
         >
           Última atualização: {dataAtual}
         </Typography>
       </Grid>
 
       <Hidden smDown>
-        <Grid item lg={12} sx={{ width: "100%", background: "#a6d0e0" }} p={2}>
+        <Grid 
+          item
+          p={2}
+          lg={12} 
+          sx={{ 
+            width: "100%", 
+            background: "#a6d0e0" 
+          }}
+        >
           <Grid
             container
-            textAlign="center"
-            textTransform="uppercase"
-            fontFamily="Roboto"
             fontWeight="500"
+            textAlign="center"
+            fontFamily="Roboto"
+            textTransform="uppercase"
           >
             <Grid item lg={3}>
               Curso Online

@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 
-/* Image imports */
 import Woman from "../../images/pexels-andrea-piacquadio-small.png";
 
 function FirstSection() {
@@ -15,8 +14,8 @@ function FirstSection() {
       justifyContent="space-around"
       sx={{
         bgcolor: "#ffdde6",
-        borderRadius: "1rem 1rem 0 0",
         marginBottom: "3px",
+        borderRadius: "1rem 1rem 0 0",
         boxShadow: "1px 0px 2px 2px rgba(0, 0, 0, 0.2)",
       }}
     >
@@ -35,7 +34,7 @@ function FirstSection() {
             width: "16rem",
             height: "16rem",
             marginTop: "9rem",
-            bgcolor: "#FE9FA6",
+            bgcolor: "#fe9fa6",
             borderRadius: "50%",
           }}
         />
@@ -50,15 +49,26 @@ function FirstSection() {
           }}
         />
       </Grid>
-      <Grid item xl={8} lg={8} md={6} sm={12} xs={12}>
+      <Grid 
+        item 
+        xl={8} 
+        lg={8} 
+        md={6} 
+        sm={12} 
+        xs={12}
+      >
         <Typography
           p={2}
           variant="h1"
           align="center"
           fontSize="2.5rem"
-          sx={{ color: "#2c2525", fontWeight: "bold" }}
+          sx={{ 
+            color: "#2c2525", 
+            fontWeight: "bold", 
+            fontFamily: "Roboto" 
+          }}
         >
-          Tudo Sobre as Técnicas Mais Atuais de Alongamento de Unhas!
+          Melhores Cursos de Manicure Online!
         </Typography>
       </Grid>
     </Grid>

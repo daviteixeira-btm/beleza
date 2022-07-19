@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./MainMenu.css";
-
 import { 
     Box,
     AppBar,
@@ -14,7 +13,6 @@ import {
     IconButton,
     ListItemText,
 } from "@mui/material";
-
 
 import  MenuIcon from '@mui/icons-material/Menu';
 
@@ -53,70 +51,130 @@ function MainMenu() {
 
     return (
         <Box component="header">
-            <Drawer open={open} anchor={"left"} onClose={() => setOpen(false)}>
+            <Drawer 
+                open={open} 
+                anchor={"left"} 
+                onClose={() => setOpen(false)}
+            >
                 {getList()}
             </Drawer>
             
             <AppBar 
                 component="nav"
-                className={navbar ? "navbar active" : "navbar"}
                 color="transparent"
-                sx={{top: "2rem", boxShadow: 0, p: 2}}
+                className={navbar ? "navbar active" : "navbar"}
+                sx={{
+                    p: 2,
+                    top: "2rem", 
+                    boxShadow: 0,
+                }}
             >
-                <Container maxWidth="lg">
-                    <Toolbar component="ul" sx={{listStyle: "none"}}>
+                <Container 
+                    maxWidth="lg">
+                    <Toolbar 
+                        component="ul" 
+                        sx={{
+                            listStyle: "none"
+                        }}
+                    >
                         <Hidden smUp>
                             <IconButton
-                                onClick={() => setOpen(true)}
                                 size="large"
                                 edge="start"
                                 color="inherit"
                                 aria-label="menu"
-                                sx={{ mr: 2 }}
+                                sx={{ 
+                                    mr: 2 
+                                }}
+                                onClick={() => setOpen(true)}
                             >
                                 <MenuIcon />
                             </IconButton>
 
                             <Typography
-                                component="li"
-                                align="right"
                                 width="100%"
+                                align="right"
+                                component="li"
                                 color="#2c2525"
+                                fontFamily="Roboto"
                             >
                                 Tudo sobre unhas
                             </Typography>
                         </Hidden>
                         <Hidden smDown>
-                            <Typography component="li" sx={{ flexGrow: 1, listStyle: "none" }}>
+                            <Typography 
+                                component="li" 
+                                sx={{ 
+                                    flexGrow: 1,
+                                    listStyle: "none",
+                                    fontWeight: "500",
+                                    fontFamily: "Roboto" 
+                                }}
+                            >
                                 Tudo sobre unhas
                             </Typography>
 
                             <Button color="inherit">
-                                <Typography component="li" sx={{ listStyle: "none" }}>
+                                <Typography 
+                                    component="li" 
+                                    sx={{ 
+                                        listStyle: "none",
+                                        fontWeight: "500",
+                                        fontFamily: "Roboto" 
+                                    }}
+                                >
                                     Sobre nos
                                 </Typography>
                             </Button>
 
                             <Button color="inherit">
-                                <Typography component="li" sx={{ listStyle: "none" }}>
+                                <Typography 
+                                    component="li" 
+                                    sx={{ 
+                                        listStyle: "none",
+                                        fontWeight: "500",
+                                        fontFamily: "Roboto" 
+                                    }}
+                                >
                                     Serviços
                                 </Typography>
                             </Button>
 
                             <Button color="inherit">
-                                <Typography component="li" sx={{ listStyle: "none" }}>
+                                <Typography 
+                                    component="li" 
+                                    sx={{ 
+                                        listStyle: "none",
+                                        fontWeight: "500",
+                                        fontFamily: "Roboto" 
+                                    }}
+                                >
                                     Time
                                 </Typography>
                             </Button>
 
                             <Button color="inherit">
-                                <Typography component="li" sx={{ listStyle: "none" }}>
+                                <Typography 
+                                    component="li" 
+                                    sx={{ 
+                                        listStyle: "none",
+                                        fontWeight: "500",
+                                        fontFamily: "Roboto" 
+                                    }}
+                                >
                                     Avaliações
                                 </Typography>
                             </Button>
 
                             <Button color="inherit">
-                                <Typography component="li" sx={{ listStyle: "none" }}>
+                                <Typography 
+                                    component="li" 
+                                    sx={{ 
+                                        listStyle: "none",
+                                        fontWeight: "500",
+                                        fontFamily: "Roboto" 
+                                    }}
+                                >
                                     Contato
                                 </Typography>
                             </Button>
