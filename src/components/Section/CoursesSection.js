@@ -1,6 +1,14 @@
 import React from "react";
-import { Grid, Hidden, Typography, List, ListItem, ListItemText, ListItemIcon } from "@mui/material";
-import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import {
+  Grid,
+  Hidden,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+} from "@mui/material";
+import CheckBoxIcon from "@mui/icons-material/CheckBox";
 
 import Product from "../Products/Product";
 
@@ -12,68 +20,104 @@ import cursoEspecialistaEmDesignDeUnhas from "../../images/curso-especialista-em
 import cursoDeCutilagemRussa from "../../images/curso-de-cutilagem-russa.png";
 
 function CoursesSection() {
-
   let data = new Date();
-  let mes = String(data.getMonth() + 1).padStart(2, '0');
+  let mes = String(data.getMonth() + 1).padStart(2, "0");
   let ano = data.getFullYear();
-  let dataAtual = mes + '/' + ano;
+  let dataAtual = mes + "/" + ano;
 
   return (
     <Grid
       container
       direction="column"
       component="section"
-      sx={{ borderRadius: "0 0 1rem 1rem" }}
+      sx={{
+        marginBottom: "3px",
+        boxShadow: "1px 0px 2px 2px rgba(0, 0, 0, 0.2)",
+      }}
     >
-      <Grid item p={4} sx={{bgcolor: "#f9f9f9"}}>
+      <Grid item p={4} sx={{ bgcolor: "#f9f9f9" }}>
         <Typography
           variant="h2"
-          sx={{ fontSize: "2rem", textAlign: "center", fontWeight: "500", color: "#0E3150" }}
+          sx={{
+            fontSize: "2rem",
+            textAlign: "center",
+            fontWeight: "500",
+            color: "#0E3150",
+          }}
         >
           Conheça os principais Cursos online de manicure
         </Typography>
       </Grid>
 
-      <Grid item px={2} py={1} sx={{bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: 'Roboto'}}>
-        <Typography variant="p" sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "left" }}>
+      <Grid
+        item
+        px={2}
+        py={1}
+        sx={{ bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: "Roboto" }}
+      >
+        <Typography
+          variant="p"
+          sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "left" }}
+        >
           Existem inumeros cursos online disponiveis na internet sobre manicure,
           o que torna dificil escolher qual comprar, certo? Como saber qual o
           melhor? Nós te ajudamos!
         </Typography>
       </Grid>
 
-      <Grid item px={2} py={1} sx={{bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: 'Roboto'}}>
-        <Typography variant="p" sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "left" }}>
+      <Grid
+        item
+        px={2}
+        py={1}
+        sx={{ bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: "Roboto" }}
+      >
+        <Typography
+          variant="p"
+          sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "left" }}
+        >
           Constantemente, fazemos a avaliação dos melhores cursos do mercado em
           nossa oferta de classificação:
         </Typography>
       </Grid>
 
-      <Grid item px={4} py={1} sx={{bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: 'Roboto'}}>
+      <Grid
+        item
+        px={4}
+        py={1}
+        sx={{ bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: "Roboto" }}
+      >
         <List>
           <ListItem disableGutters disablePadding>
             <ListItemIcon>
-              <CheckBoxIcon sx={{ color: "#009d43"}} />
+              <CheckBoxIcon sx={{ color: "#009d43" }} />
             </ListItemIcon>
             <ListItemText primary="Escolhemos os melhores cursos do mercado;" />
           </ListItem>
           <ListItem disableGutters disablePadding>
             <ListItemIcon>
-              <CheckBoxIcon sx={{ color: "#009d43"}} />
+              <CheckBoxIcon sx={{ color: "#009d43" }} />
             </ListItemIcon>
             <ListItemText primary="Todos os cursos tem garantia minima de 7 dias;" />
           </ListItem>
           <ListItem disableGutters disablePadding>
             <ListItemIcon>
-              <CheckBoxIcon sx={{ color: "#009d43"}} />
+              <CheckBoxIcon sx={{ color: "#009d43" }} />
             </ListItemIcon>
             <ListItemText primary="Todos os cursos oferecem uma plataforma de compra segura." />
           </ListItem>
         </List>
       </Grid>
 
-      <Grid item px={2} py={1} sx={{bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: 'Roboto'}}>
-        <Typography variant="p" sx={{ fontSize: ".8rem", fontWeight: "500", textAlign: "left" }}>
+      <Grid
+        item
+        px={2}
+        py={1}
+        sx={{ bgcolor: "#f9f9f9", color: "#0E3150", fontFamily: "Roboto" }}
+      >
+        <Typography
+          variant="p"
+          sx={{ fontSize: ".8rem", fontWeight: "500", textAlign: "left" }}
+        >
           Última atualização: {dataAtual}
         </Typography>
       </Grid>
