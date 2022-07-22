@@ -11,26 +11,19 @@ import {
 import Product from "../Products/Product";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 
-import cursoDeManicure 
-  from "../../images/curso-de-manicure.png";
+import cursoDeManicure from "../../images/curso-de-manicure.png";
 
-import cursoEscolaDesignerDeUnhas 
-  from "../../images/escola-designer-de-unhas.png";
+import cursoEscolaDesignerDeUnhas from "../../images/escola-designer-de-unhas.png";
 
-import cursoDeCutilagemRussa 
-  from "../../images/curso-de-cutilagem-russa.png";
+import cursoDeCutilagemRussa from "../../images/curso-de-cutilagem-russa.png";
 
-import cursoAlongamentoDeUnhas 
-  from "../../images/curso-alongamento-de-unhas.png";
+import cursoAlongamentoDeUnhas from "../../images/curso-alongamento-de-unhas.png";
 
-import cursoEspecialistaEmDesignDeUnhas 
-  from "../../images/curso-especialista-em-designer-de-unhas.png";
+import cursoEspecialistaEmDesignDeUnhas from "../../images/curso-especialista-em-designer-de-unhas.png";
 
-import cursoEspecializacaoEmCutilagemParaManicure 
-  from "../../images/especializacao-em-cutilagem-para-manicure.png";
+import cursoEspecializacaoEmCutilagemParaManicure from "../../images/especializacao-em-cutilagem-para-manicure.png";
 
-function CoursesSection(){
-
+function CoursesSection() {
   let data = new Date();
   let ano = data.getFullYear();
   let mes = String(data.getMonth() + 1).padStart(2, "0");
@@ -46,11 +39,11 @@ function CoursesSection(){
         boxShadow: "1px 0px 2px 2px rgba(0, 0, 0, 0.2)",
       }}
     >
-      <Grid 
-        item 
-        p={4} 
-        sx={{ 
-          bgcolor: "#f9f9f9" 
+      <Grid
+        item
+        p={4}
+        sx={{
+          bgcolor: "#f9f9f9",
         }}
       >
         <Typography
@@ -60,7 +53,7 @@ function CoursesSection(){
             fontSize: "2rem",
             fontWeight: "500",
             textAlign: "center",
-            fontFamily: "Roboto"
+            fontFamily: "Roboto",
           }}
         >
           Fizemos uma lista com os principais cursos online do mercado
@@ -80,14 +73,14 @@ function CoursesSection(){
           sx={{
             fontSize: "1rem",
             color: "#0E3150",
-            textAlign: "left", 
+            textAlign: "left",
             fontWeight: "500",
-            fontFamily: "Roboto"
+            fontFamily: "Roboto",
           }}
         >
           Existem inúmeros cursos online disponíveis na internet sobre manicure,
-          o que torna difícil escolher qual comprar, certo? Como saber qual o
-          melhor? Nós te ajudamos!
+          o que torna difícil escolher qual comprar, certo? Como saber qual a melhor opção? 
+          Nós te ajudamos!
         </Typography>
       </Grid>
 
@@ -102,11 +95,11 @@ function CoursesSection(){
         <Typography
           variant="p"
           sx={{
-            color: "#0e3150", 
-            fontSize: "1rem", 
-            fontWeight: "500", 
+            color: "#0e3150",
+            fontSize: "1rem",
+            fontWeight: "500",
             textAlign: "left",
-            fontFamily: "Roboto"
+            fontFamily: "Roboto",
           }}
         >
           Constantemente, fazemos a avaliação dos melhores cursos do mercado em
@@ -118,10 +111,10 @@ function CoursesSection(){
         item
         px={4}
         py={1}
-        sx={{  
+        sx={{
           color: "#0e3150",
           bgcolor: "#f9f9f9",
-          fontFamily: "Roboto"
+          fontFamily: "Roboto",
         }}
       >
         <List>
@@ -150,131 +143,179 @@ function CoursesSection(){
         item
         px={2}
         py={1}
-        sx={{ 
+        sx={{
           color: "#0e3150",
-          bgcolor: "#f9f9f9", 
-          fontFamily: "Roboto" 
+          bgcolor: "#f9f9f9",
+          fontFamily: "Roboto",
         }}
       >
         <Typography
           variant="p"
-          sx={{ 
-            fontSize: ".8rem", 
-            fontWeight: "500", 
+          sx={{
+            fontSize: ".8rem",
+            fontWeight: "500",
             textAlign: "left",
-            fontFamily: "Roboto"
+            fontFamily: "Roboto",
           }}
         >
           Última atualização: {dataAtual}
         </Typography>
       </Grid>
 
-      <Hidden smDown>
-        <Grid 
-          item
-          p={2}
-          lg={12} 
-          sx={{ 
-            width: "100%", 
-            background: "#a6d0e0" 
-          }}
-        >
+      <Grid item>
+        <Hidden smDown>
           <Grid
-            container
-            fontWeight="500"
-            textAlign="center"
-            fontFamily="Roboto"
-            textTransform="uppercase"
+            item
+            p={2}
+            lg={12}
+            sx={{
+              width: "100%",
+              height: "3rem",
+              background: "#a6d0e0",
+            }}
           >
-            <Grid item lg={3}>
-              Curso Online
-            </Grid>
-            <Grid item lg={5}>
-              O que curtimos
-            </Grid>
-            <Grid item lg={2}>
-              Avaliação
-            </Grid>
-            <Grid item lg={2}>
-              Informações
+            <Grid
+              container
+              fontWeight="500"
+              textAlign="center"
+              fontFamily="Roboto"
+              textTransform="uppercase"
+            >
+              <Grid item lg={3}>
+                Curso Online
+              </Grid>
+              <Grid item lg={5}>
+                O que curtimos
+              </Grid>
+              <Grid item lg={2}>
+                Avaliação
+              </Grid>
+              <Grid item lg={2}>
+                Informações
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
-      </Hidden>
+        </Hidden>
+      </Grid>
 
       <Product
         image={cursoEspecializacaoEmCutilagemParaManicure}
-        titulo="Curso de Cutilagem para Manicures com Faby Cardoso - Especialização"
-        texto="Curso de especialização em cutilagem para manicure 
-        e pedicure, válido para iniciantes e manicures com dificuldades 
-        ou em busca de aperfeiçoamento na profissão!"
+        titulo="Curso Especialização para Manicure e Pedicure com Faby Cardoso"
         nota="5.0"
         ratingValue={5.0}
         linkPage="https://go.hotmart.com/A72954398E"
+        value1={true}
+        value2={true}
+        value3={true}
+        value4={true}
+        value5={true}
+        value6={true}
+        text1="Aulas de Manicure"
+        text2="Aulas de Pedicure"
+        text3="Aulas Bônus de decoração de unhas"
+        text4="Certificação"
+        text5="Acesso vitalício"
+        text6="Perfeito para manicures iniciantes e experientes"
       />
 
       <Product
         image={cursoEspecialistaEmDesignDeUnhas}
-        titulo="Especialista em Designer de Unhas"
-        texto="O curso online de alongamento de unhas 
-        Especialista em Designer de Unhas é um curso 
-        totalmente completo para você que quer aprender 
-        do zero como fazer unhas maravilhosas com todos 
-        os formatos e modelos de unhas."
+        titulo="Curso Especialista em Designer de Unhas"
         nota="4.9"
         ratingValue={4.9}
         linkPage="https://go.hotmart.com/U72955347K"
+        value1={true}
+        value2={true}
+        value3={true}
+        value4={true}
+        value5={true}
+        value6={false}
+        text1="Aulas de Alongamento de Unhas e Nail Designer"
+        text2="Bônus exclusivos"
+        text3="Certificação"
+        text4="Acesso vitalício"
+        text5="Perfeito para manicures iniciantes e experientes"
+        text6="Aulas de Manicure e Pedicure"
       />
 
       <Product
         image={cursoDeManicure}
-        titulo="Curso de Manicure e Pedicure (Iniciante) Faby Cardoso"
-        texto="Nestas aulas de manicure da Faby Cardoso pode 
-        contar com vídeos 100% práticos onde irá aprender: 
-        Sobre cutículas mãos e pés; Unhas francêsinhas perfeitas 
-        nas mãos e nos pés; Como passar o esmalte nude sem manchar; 
-        Como tirar o borrado corretamente das unhas; Como colocar 
-        adesivos artesanais e muito mais...."
+        titulo="Curso para Iniciantes de Manicure e Pedicure com Faby Cardoso"
         nota="4.8"
         ratingValue={4.8}
         linkPage="https://go.hotmart.com/K72955078N"
+        value1={true}
+        value2={true}
+        value3={true}
+        value4={true}
+        value5={false}
+        value6={false}
+        text1="Aulas de Manicure"
+        text2="Aulas de Pedicure"
+        text3="Certificação"
+        text4="Bônus Especiais"
+        text5="Acesso vitalício"
+        text6="Perfeito para manicures iniciantes e experientes"
       />
 
       <Product
         image={cursoEscolaDesignerDeUnhas}
-        titulo="Escola Design de Unhas"
-        texto="Muitas alunas estão colocando em prática as 
-        TÉCNICAS ATUAIS DE ALONGAMENTO que estão aprendendo 
-        neste EXATO MOMENTO na ESCOLA DESIGNER DE UNHAS. 
-        Só falta você. 2 Certificados Válidos Incluso."
+        titulo="Curso Escola Design de Unhas"
         nota="4.7"
         ratingValue={4.7}
         linkPage="https://go.hotmart.com/R72950783S"
+        value1={true}
+        value2={true}
+        value3={true}
+        value4={true}
+        value5={true}
+        value6={false}
+        text1="Aulas de Manicure"
+        text2="Bônus Especiais"
+        text3="Certificação"
+        text4="Acesso vitalício"
+        text5="Perfeito para manicures iniciantes e experientes"
+        text6="Aulas de Pedicure"
       />
 
       <Product
         image={cursoAlongamentoDeUnhas}
-        titulo="CURSO ALONGAMENTO DE UNHAS - COM PAOLA CHAVES"
-        texto="O Curso Completo Alongamento de Unhas com 
-        Paola Chaves possui 48 vídeo aulas exclusivas de 
-        altíssima qualidade onde a aluna aprenderá do zero 
-        a como fazer unhas de qualidade com aspecto de naturalidade."
+        titulo="Curso Alongamento de Unhas com Paola Chaves"
         nota="4.7"
         ratingValue={4.7}
         linkPage="https://go.hotmart.com/W72954815O"
+        value1={true}
+        value2={true}
+        value3={true}
+        value4={true}
+        value5={false}
+        value6={false}
+        text1="Aulas de Alongamentos de Unhas"
+        text2="Certificação"
+        text3="Acesso Vitalício"
+        text4="Bônus Exclusivos"
+        text5="Aulas de Manicure e Pedicure"
+        text6="Perfeito para manicures iniciantes e experientes"
       />
 
       <Product
         image={cursoDeCutilagemRussa}
-        titulo="Curso de Cutilagem Russa + 6 Bônus"
-        texto="A cutilagem russa mal desembarcou no Brasil e 
-        já vem dando o que falar. A técnica, que abole o uso 
-        de alicates na hora de remover as cutículas das unhas, 
-        tem revolucionado o universo da manicure e causado frisson 
-        nos salões, inclusive os brasilienses."
+        titulo="Curso de Cutilagem Russa"
         nota="4.7"
         ratingValue={4.7}
         linkPage="https://go.hotmart.com/Y72955761M"
+        value1={true}
+        value2={true}
+        value3={true}
+        value4={false}
+        value5={false}
+        value6={false}
+        text1="Aulas sobre Técnica de Cutilagem Russa"
+        text2="Bônus Exclusivos"
+        text3="Certificação"
+        text4="Aulas de Manicure e Pedicure"
+        text5="Acesso Vitalício"
+        text6="Perfeito para manicures iniciantes e experientes"
       />
     </Grid>
   );

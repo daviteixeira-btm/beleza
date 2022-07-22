@@ -4,19 +4,19 @@ import {
   Link,
   Grid,
   Card,
+  List,
   Button,
   Rating,
   CardMedia,
   Typography,
 } from "@mui/material";
+import ItemDaLista from "./Item";
 
 function Product(props) {
   return (
-    <Grid 
-      item 
-      p={1} 
-      m={2}>
+    <Grid item>
       <Grid
+        p={1}
         container
         sx={{
           display: "flex",
@@ -25,11 +25,12 @@ function Product(props) {
       >
         <Grid
           item
-          p={1}
           lg={3}
           sx={{
             width: "100%",
+            height: "18rem",
             display: "flex",
+            alignItems: "center",
             justifyContent: "center",
           }}
         >
@@ -38,18 +39,19 @@ function Product(props) {
             underline="none"
             href={props.linkPage}
           >
-            <Card 
+            <Card
               sx={{ 
-                maxWidth: "16rem"
+                maxWidth: "16rem",
+                maxHeight: "16rem",
               }}>
               <CardMedia 
                 component="img" 
-                image={props.image} 
+                image={props.image}
               />
             </Card>
           </Link>
-          
         </Grid>
+
         <Grid 
           item 
           p={1} 
@@ -60,7 +62,6 @@ function Product(props) {
         >
           <Box>
             <Typography
-              m={2}
               gutterBottom
               variant="h3"
               sx={{ 
@@ -71,17 +72,19 @@ function Product(props) {
             >
               {props.titulo}
             </Typography>
-            <Typography 
-              variant="p" 
-              sx={{
-                textAlign: "left",
-                fontFamily: "Roboto"
-              }}
-            >
-              {props.texto}
-            </Typography>
+
+            <List>
+              <ItemDaLista value={props.value1} text={props.text1}/>
+              <ItemDaLista value={props.value2} text={props.text2}/>
+              <ItemDaLista value={props.value3} text={props.text3}/>
+              <ItemDaLista value={props.value4} text={props.text4}/>
+              <ItemDaLista value={props.value5} text={props.text5}/>
+              <ItemDaLista value={props.value6} text={props.text6}/>
+            </List>
+            
           </Box>
         </Grid>
+
         <Grid
           item
           lg={2}
@@ -121,6 +124,7 @@ function Product(props) {
             defaultValue={props.ratingValue}
           />
         </Grid>
+
         <Grid 
           item 
           lg={2} 
@@ -156,6 +160,7 @@ function Product(props) {
             </Link>
           </Box>
         </Grid>
+
       </Grid>
     </Grid>
   );
