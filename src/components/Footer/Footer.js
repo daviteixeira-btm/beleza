@@ -8,7 +8,7 @@ function Footer() {
       container
       component="footer"
       sx={{
-        bgcolor: "#FE9FA6",
+        bgcolor: "#fe9fa6",
         justifyContent: "center",
         borderRadius: "0 0 1rem 1rem",
         boxShadow: "1px 1px 2px 2px rgba(0, 0, 0, 0.2)",
@@ -17,13 +17,15 @@ function Footer() {
       <Grid item>
         <Typography 
           p={3} 
-          variant="h6" 
-          sx={{ 
+          variant="h4" 
+          sx={{
+            fontWeight: "500",
             fontSize: ".8rem",
-            fontFamily: "Roboto" 
+            textAlign: "center",
+            fontFamily: "Roboto",
           }}
         >
-          © 2022. beleza.com.br. Todos os direitos reservados.
+          © 2022. tudosobreunhas.com.br. Todos os direitos reservados.
         </Typography>
       </Grid>
     </Grid>

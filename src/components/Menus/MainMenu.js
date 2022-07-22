@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./MainMenu.css";
 import { 
     Box,
+    Avatar,
     AppBar,
     Drawer,
     Hidden,
@@ -15,6 +16,8 @@ import {
 } from "@mui/material";
 
 import  MenuIcon from '@mui/icons-material/Menu';
+
+import logo from "../../images/logoIcon.png";
 
 const pages = [
     { name: 'Sobre nos' }, 
@@ -64,7 +67,7 @@ function MainMenu() {
                 color="transparent"
                 className={navbar ? "navbar active" : "navbar"}
                 sx={{
-                    p: 2,
+                    p: 1,
                     top: "2rem", 
                     boxShadow: 0,
                 }}
@@ -91,17 +94,23 @@ function MainMenu() {
                                 <MenuIcon />
                             </IconButton>
 
+                            <Avatar alt="Logo do Beleza.com" src={logo} />
+
                             <Typography
                                 width="100%"
                                 align="right"
                                 component="li"
                                 color="#2c2525"
                                 fontFamily="Roboto"
+                                fontWeight="bold"
                             >
-                                Tudo sobre unhas
+                                Tudo Sobre Unhas
                             </Typography>
                         </Hidden>
                         <Hidden smDown>
+
+                            <Avatar alt="Logo do Tudo Sobre Unhas" src={logo} />
+
                             <Typography 
                                 component="li" 
                                 sx={{ 

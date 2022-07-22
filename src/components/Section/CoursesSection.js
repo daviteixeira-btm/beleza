@@ -281,8 +281,8 @@ function CoursesSection() {
       <Product
         image={cursoAlongamentoDeUnhas}
         titulo="Curso Alongamento de Unhas com Paola Chaves"
-        nota="4.7"
-        ratingValue={4.7}
+        nota="4.6"
+        ratingValue={4.6}
         linkPage="https://go.hotmart.com/W72954815O"
         value1={true}
         value2={true}
@@ -301,8 +301,8 @@ function CoursesSection() {
       <Product
         image={cursoDeCutilagemRussa}
         titulo="Curso de Cutilagem Russa"
-        nota="4.7"
-        ratingValue={4.7}
+        nota="4.6"
+        ratingValue={4.6}
         linkPage="https://go.hotmart.com/Y72955761M"
         value1={true}
         value2={true}
