@@ -117,7 +117,8 @@ function MainMenu() {
                                     flexGrow: 1,
                                     listStyle: "none",
                                     fontWeight: "500",
-                                    fontFamily: "Roboto" 
+                                    fontFamily: "Roboto",
+                                    paddingLeft: "1rem" 
                                 }}
                             >
                                 Tudo sobre unhas
