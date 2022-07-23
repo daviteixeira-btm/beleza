@@ -37,7 +37,13 @@ function MainMenu() {
           {pages.map((item, index) => (
             <ListItem button key={index}>
                 <Link href={item.id} underline="none" sx={{color: "#2c2525"}}>
-                    <ListItemText primary={item.name} />
+                    <ListItemText 
+                        primary={item.name} 
+                        sx={{ 
+                            borderBottom: "4px solid #eb7cb8",
+                            "&:hover": { color: "#2c2525", borderBottom: '4px solid #fe9fa6' },
+                        }}
+                    />
                 </Link>
             </ListItem>
           ))}
