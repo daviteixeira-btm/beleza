@@ -42,6 +42,7 @@ function CoursesSection() {
       <Grid
         item
         p={4}
+        id="sobre"
         sx={{
           bgcolor: "#f9f9f9",
         }}
@@ -162,7 +163,7 @@ function CoursesSection() {
         </Typography>
       </Grid>
 
-      <Grid item>
+      <Grid item id="cursos">
         <Hidden smDown>
           <Grid
             item

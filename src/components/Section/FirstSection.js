@@ -7,6 +7,7 @@ function FirstSection() {
   return (
     <Grid
       mt={5}
+      id="inicio"
       container
       direction="row"
       alignItems="center"

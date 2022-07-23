@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./MainMenu.css";
 import { 
     Box,
+    Link,
     Avatar,
     AppBar,
     Drawer,
@@ -20,11 +21,10 @@ import  MenuIcon from '@mui/icons-material/Menu';
 import logo from "../../images/logoIcon.png";
 
 const pages = [
-    { name: 'Sobre nos' }, 
-    { name: 'Serviços' }, 
-    { name: 'Time' },
-    { name: 'Avaliações' },
-    { name: 'Contato' }
+    { name: 'Início', id: '#inicio'},
+    { name: 'Sobre nós', id: '#sobre' }, 
+    { name: 'Cursos', id: '#cursos' }, 
+    { name: 'Perguntas Frequentes', id: '#perguntas' }
 ];
 
 function MainMenu() {
@@ -36,7 +36,9 @@ function MainMenu() {
         <div style={{ width: 250 }} onClick={() => setOpen(false)}>
           {pages.map((item, index) => (
             <ListItem button key={index}>
-              <ListItemText primary={item.name} />
+                <Link href={item.id} underline="none" sx={{color: "#2c2525"}}>
+                    <ListItemText primary={item.name} />
+                </Link>
             </ListItem>
           ))}
         </div>
@@ -94,7 +96,7 @@ function MainMenu() {
                                 <MenuIcon />
                             </IconButton>
 
-                            <Avatar alt="Logo do Beleza.com" src={logo} />
+                            <Avatar alt="Logo da tudosobreunhas.com" src={logo} />
 
                             <Typography
                                 width="100%"
@@ -109,7 +111,9 @@ function MainMenu() {
                         </Hidden>
                         <Hidden smDown>
 
-                            <Avatar alt="Logo do Tudo Sobre Unhas" src={logo} />
+                            <Link underline="none" href="#inicio">
+                                <Avatar alt="Logo do Tudo Sobre Unhas" src={logo} />
+                            </Link>
 
                             <Typography 
                                 component="li" 
@@ -121,73 +125,54 @@ function MainMenu() {
                                     paddingLeft: "1rem" 
                                 }}
                             >
-                                Tudo sobre unhas
+                                Tudo Sobre Unhas
                             </Typography>
-
-                            <Button color="inherit">
-                                <Typography 
-                                    component="li" 
-                                    sx={{ 
-                                        listStyle: "none",
-                                        fontWeight: "500",
-                                        fontFamily: "Roboto" 
-                                    }}
-                                >
-                                    Sobre nos
-                                </Typography>
-                            </Button>
-
-                            <Button color="inherit">
-                                <Typography 
-                                    component="li" 
-                                    sx={{ 
-                                        listStyle: "none",
-                                        fontWeight: "500",
-                                        fontFamily: "Roboto" 
-                                    }}
-                                >
-                                    Serviços
-                                </Typography>
-                            </Button>
-
-                            <Button color="inherit">
-                                <Typography 
-                                    component="li" 
-                                    sx={{ 
-                                        listStyle: "none",
-                                        fontWeight: "500",
-                                        fontFamily: "Roboto" 
-                                    }}
-                                >
-                                    Time
-                                </Typography>
-                            </Button>
-
-                            <Button color="inherit">
-                                <Typography 
-                                    component="li" 
-                                    sx={{ 
-                                        listStyle: "none",
-                                        fontWeight: "500",
-                                        fontFamily: "Roboto" 
-                                    }}
-                                >
-                                    Avaliações
-                                </Typography>
-                            </Button>
-
-                            <Button color="inherit">
-                                <Typography 
-                                    component="li" 
-                                    sx={{ 
-                                        listStyle: "none",
-                                        fontWeight: "500",
-                                        fontFamily: "Roboto" 
-                                    }}
-                                >
-                                    Contato
-                                </Typography>
-                            </Button>
+                            
+                            <Link underline="none" href="#sobre" sx={{color: "#2c2525"}}>
+                                <Button color="inherit">
+                                    <Typography 
+                                        component="li" 
+                                        sx={{ 
+                                            listStyle: "none",
+                                            fontWeight: "500",
+                                            fontFamily: "Roboto" 
+                                        }}
+                                    >
+                                        Sobre nós
+                                    </Typography>
+                                </Button>
+                            </Link>
+                            
+                            <Link underline="none" href="#cursos" sx={{color: "#2c2525"}}>
+                                <Button color="inherit">
+                                    <Typography 
+                                        component="li" 
+                                        sx={{ 
+                                            listStyle: "none",
+                                            fontWeight: "500",
+                                            fontFamily: "Roboto" 
+                                        }}
+                                    >
+                                        Cursos
+                                    </Typography>
+                                </Button>
+                            </Link>
+                            
+                            <Link underline="none" href="#perguntas" sx={{color: "#2c2525"}}>
+                                <Button color="inherit">
+                                    <Typography 
+                                        component="li" 
+                                        sx={{ 
+                                            listStyle: "none",
+                                            fontWeight: "500",
+                                            fontFamily: "Roboto" 
+                                        }}
+                                    >
+                                        Perguntas Frequentes
+                                    </Typography>
+                                </Button>
+                            </Link>
+                            
                         </Hidden>  
                     </Toolbar>
                 </Container>

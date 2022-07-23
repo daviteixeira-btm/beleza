@@ -13,6 +13,7 @@ function FrequentQuestions() {
     <Grid
       container
       mt={1}
+      id="perguntas"
       sx={{
         justifyContent: "center",
         flexDirection: "column",
