@@ -102,23 +102,23 @@ function MainMenu() {
                                 <MenuIcon />
                             </IconButton>
 
-                            <Avatar alt="Logo da tudosobreunhas.com" src={logo} />
+                            <Avatar alt="Logo da comoserumamanicure.com.br" src={logo} />
 
                             <Typography
                                 width="100%"
-                                align="right"
+                                align="center"
                                 component="li"
                                 color="#2c2525"
                                 fontFamily="Roboto"
                                 fontWeight="bold"
                             >
-                                Tudo Sobre Unhas
+                                Como ser uma Manicure
                             </Typography>
                         </Hidden>
                         <Hidden smDown>
 
                             <Link underline="none" href="#inicio">
-                                <Avatar alt="Logo do Tudo Sobre Unhas" src={logo} />
+                                <Avatar alt="Logo do Como ser uma Manicure" src={logo} />
                             </Link>
 
                             <Typography 
@@ -131,7 +131,7 @@ function MainMenu() {
                                     paddingLeft: "1rem" 
                                 }}
                             >
-                                Tudo Sobre Unhas
+                                Como ser uma Manicure
                             </Typography>
                             
                             <Link underline="none" href="#sobre" sx={{color: "#2c2525"}}>

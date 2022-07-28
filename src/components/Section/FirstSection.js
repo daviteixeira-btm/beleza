@@ -69,7 +69,7 @@ function FirstSection() {
             fontFamily: "Roboto" 
           }}
         >
-          Melhores Cursos de Manicure Online!
+          Como ser uma Manicure? Os Melhores Cursos de Manicure Online!
         </Typography>
       </Grid>
     </Grid>

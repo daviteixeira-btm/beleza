@@ -25,7 +25,7 @@ function Footer() {
             fontFamily: "Roboto",
           }}
         >
-          © 2022. tudosobreunhas.com.br. Todos os direitos reservados.
+          © 2022. comoserumamanicure.com.br. Todos os direitos reservados.
         </Typography>
       </Grid>
     </Grid>
