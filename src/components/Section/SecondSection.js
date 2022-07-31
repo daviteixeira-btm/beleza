@@ -4,6 +4,7 @@ import { Grid, Typography } from "@mui/material";
 function SecondSection() {
   return (
     <Grid
+      id="sobre"
       container
       component="section"
       sx={{

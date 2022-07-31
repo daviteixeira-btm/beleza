@@ -42,7 +42,6 @@ function CoursesSection() {
       <Grid
         item
         p={4}
-        id="sobre"
         sx={{
           bgcolor: "#f9f9f9",
         }}
