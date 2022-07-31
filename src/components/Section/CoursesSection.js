@@ -57,7 +57,7 @@ function CoursesSection() {
             fontFamily: "Roboto",
           }}
         >
-          Fizemos uma lista com os principais cursos online do mercado
+          Fizemos uma lista com os principais cursos de manicure online do mercado
         </Typography>
       </Grid>
 
