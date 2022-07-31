@@ -4,6 +4,10 @@ import { Box, Grid, Typography } from "@mui/material";
 import Woman from "../../images/pexels-andrea-piacquadio-small.png";
 
 function FirstSection() {
+
+  let data = new Date();
+  let ano = data.getFullYear();
+
   return (
     <Grid
       mt={5}
@@ -69,7 +73,20 @@ function FirstSection() {
             fontFamily: "Roboto" 
           }}
         >
-          Como ser uma Manicure? Os Melhores Cursos de Manicure Online!
+          Qual o melhor curso de manicure online?
+        </Typography>
+        <Typography 
+          p={2}
+          variante="p"
+          fontSize="1.3rem"
+          sx={{ 
+            color: "#2c2525",
+            fontWeight: "500",
+            fontFamily: "Roboto" 
+          }}
+        >
+          Se você deseja aprender as habilidades necessárias para ser uma ótima manicure, 
+          esta revisão dos melhores cursos online de manicure e pedicure de {ano} é para você.
         </Typography>
       </Grid>
     </Grid>
