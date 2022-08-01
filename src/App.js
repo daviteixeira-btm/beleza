@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import FrequentQuestions from "./components/Acordion/FrequentQuestions";
 import SecondSection from "./components/Section/SecondSection";
 import WhatAdvantages from "./components/Section/WhatAdvantages";
+import Conclusion from "./components/Section/Conclusion";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <SecondSection />
       <CoursesSection />
       <WhatAdvantages />
+      <Conclusion />
       <FrequentQuestions />
       <Footer />
     </Container>
