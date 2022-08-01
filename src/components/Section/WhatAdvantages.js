@@ -46,7 +46,7 @@ function WhatAdvantages() {
             fontFamily: "Roboto",
           }}
         >
-          Em resumo, há muitas vantagens em fazer um curso de design de unhas.
+          Em resumo, há muitas vantagens em fazer um curso de designer de unhas.
           Por exemplo, você pode:
         </Typography>
 
@@ -74,7 +74,7 @@ function WhatAdvantages() {
               <AutoAwesomeIcon sx={{ color: "#eb7cb8" }} />
             </ListItemIcon>
             <ListItemText
-              primary="Aprenda habilidades específicas que vão lhe diferenciar de outras design de unhas;"
+              primary="Aprenda habilidades específicas que vão lhe diferenciar de outras designer de unhas;"
               sx={{ color: "#0e3150" }}
             />
           </ListItem>
@@ -102,7 +102,7 @@ function WhatAdvantages() {
         >
           Embora você possa querer fazer um curso de manicure por diferentes
           motivos - como estudar para um exame formal, desenvolvimento de
-          carreira, etc. – O Design de Unhas é uma habilidade divertida e
+          carreira, etc. – O Designer de Unhas é uma habilidade divertida e
           criativa que pode abrir novas portas para sua carreira, ou ser apenas
           um hobby divertido.
         </Typography>
