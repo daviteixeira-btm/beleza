@@ -23,7 +23,8 @@ import logo from "../../images/logoIcon.png";
 const pages = [
     { name: 'Início', id: '#inicio'},
     { name: 'Sobre nós', id: '#sobre' }, 
-    { name: 'Cursos', id: '#cursos' }, 
+    { name: 'Cursos', id: '#cursos' },
+    { name: 'Vantagens', id: '#vantagens' },
     { name: 'Perguntas Frequentes', id: '#perguntas' }
 ];
 
@@ -160,6 +161,21 @@ function MainMenu() {
                                         }}
                                     >
                                         Cursos
+                                    </Typography>
+                                </Button>
+                            </Link>
+
+                            <Link underline="none" href="#vantagens" sx={{color: "#2c2525"}}>
+                                <Button color="inherit">
+                                    <Typography 
+                                        component="li" 
+                                        sx={{ 
+                                            listStyle: "none",
+                                            fontWeight: "500",
+                                            fontFamily: "Roboto" 
+                                        }}
+                                    >
+                                        Vantagens
                                     </Typography>
                                 </Button>
                             </Link>
