@@ -7,6 +7,7 @@ import CoursesSection from "./components/Section/CoursesSection";
 import Footer from "./components/Footer/Footer";
 import FrequentQuestions from "./components/Acordion/FrequentQuestions";
 import SecondSection from "./components/Section/SecondSection";
+import WhatAdvantages from "./components/Section/WhatAdvantages";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <FirstSection />
       <SecondSection />
       <CoursesSection />
+      <WhatAdvantages />
       <FrequentQuestions />
       <Footer />
     </Container>
