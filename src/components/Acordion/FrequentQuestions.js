@@ -139,6 +139,38 @@ function FrequentQuestions() {
                 fontFamily: "Roboto",
               }}
             >
+              Qual o valor de um curso de manicure?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails sx={{ background: "#ffdde6" }}>
+            <Typography
+              sx={{
+                color: "#0e3150",
+                fontWeight: "500",
+                fontFamily: "Roboto",
+              }}
+            >
+              É evidente que os preços variam de acordo com o conteúdo do curso,
+              duração, instrutor, etc. Mas, no geral, os cursos individuais aqui
+              listados variam em apenas R$ 35,00 enquanto os cursos mais longos
+              vão até R$ 100,00 a vista.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel-04-content"
+            id="panel-04-header"
+          >
+            <Typography
+              sx={{
+                color: "#0e3150",
+                fontWeight: "500",
+                fontFamily: "Roboto",
+              }}
+            >
               O que vou precisar para aprender com esses cursos?
             </Typography>
           </AccordionSummary>
@@ -153,7 +185,7 @@ function FrequentQuestions() {
               Além da vontade de aprender algo novo, nestes cursos, as
               especialistas do setor ensinarão tudo o que você precisa saber
               para se tornar uma <b>técnica de unhas</b>. Aprender com estes
-              cursos irá ajudá-la a crescer no negócio da beleza, a demanda por{" "}
+              cursos irá ajudá-la a crescer no negócio da beleza, a demanda por
               <b>manicures</b> está em toda parte. Então, se você deseja
               expandir sua carreira, estes são os cursos perfeitos.
             </Typography>
@@ -163,8 +195,8 @@ function FrequentQuestions() {
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel-04-content"
-            id="panel-04-header"
+            aria-controls="panel-05-content"
+            id="panel-05-header"
           >
             <Typography
               sx={{
@@ -194,8 +226,8 @@ function FrequentQuestions() {
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel-05-content"
-            id="panel-05-header"
+            aria-controls="panel-06-content"
+            id="panel-06-header"
           >
             <Typography
               sx={{
@@ -217,6 +249,42 @@ function FrequentQuestions() {
             >
               Sim! Todos os cursos listados oferecem uma otíma equipe de suporte
               para qualquer dúvida que você possa ter durante o seu aprendizado.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel-07-content"
+            id="panel-07-header"
+          >
+            <Typography
+              sx={{
+                color: "#0e3150",
+                fontWeight: "500",
+                fontFamily: "Roboto",
+              }}
+            >
+              Quanto tempo dura o curso de manicure e pedicure?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails sx={{ background: "#ffdde6" }}>
+            <Typography
+              sx={{
+                color: "#0e3150",
+                fontWeight: "500",
+                fontFamily: "Roboto",
+              }}
+            >
+              Os cursos nesta revisão variam de uma a várias semanas de
+              conteúdo! No entanto, vale lembrar que todos esses cursos são
+              únicos em seu foco, habilidades e objetivos de aprendizagem.
+              Portanto, não há tempo definido para aprender sobre como ser uma
+              manicure - depende do tempo que você está disposta a oferecer. E,
+              claro, você tem que considerar o tempo para praticar. Além disso,
+              a vantagem desses cursos serem online é que você pode assisti-los
+              novamente quantas vezes quiser.
             </Typography>
           </AccordionDetails>
         </Accordion>
