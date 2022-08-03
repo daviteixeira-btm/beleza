@@ -83,91 +83,103 @@ function MainMenu() {
             >
                 <Container 
                     maxWidth="lg">
-                    <Toolbar 
-                        component="ul" 
+                    <Toolbar
+                        component="ul"  
                         sx={{
                             listStyle: "none"
                         }}
                     >
                         <Hidden smUp>
-                            <IconButton
-                                size="large"
-                                edge="start"
-                                color="inherit"
-                                aria-label="menu"
-                                sx={{ 
-                                    mr: 2 
+                            <Box 
+                                component="ul" 
+                                sx={{  
+                                    width: "100%", 
+                                    display: "flex",
+                                    listStyle: "none",
+                                    alignItems: "center",
+                                    justifyContent: "space-evenly"
                                 }}
-                                onClick={() => setOpen(true)}
                             >
-                                <MenuIcon />
-                            </IconButton>
+                                <Box component="li">
+                                    <IconButton
+                                        size="large"
+                                        edge="start"
+                                        color="inherit"
+                                        aria-label="menu"
+                                        sx={{ 
+                                            mr: 2 
+                                        }}
+                                        onClick={() => setOpen(true)}
+                                    >
+                                        <MenuIcon />
+                                    </IconButton>
+                                </Box>
 
-                            <Avatar alt="Logo da comoserumamanicure.com.br" src={logo} />
+                                <Avatar 
+                                    component="li" 
+                                    alt="Logo da comoserumamanicure.com.br" 
+                                    src={logo} 
+                                />
 
-                            <Typography
-                                width="100%"
-                                align="center"
-                                component="li"
-                                color="#2c2525"
-                                fontFamily="Roboto"
-                                fontWeight="bold"
-                            >
-                                Como ser uma Manicure
-                            </Typography>
+                                <Box component="li">
+                                    <Typography
+                                        width="100%"
+                                        align="center"
+                                        component="li"
+                                        color="#2c2525"
+                                        fontWeight="bold"
+                                        fontFamily="Roboto"
+                                    >
+                                        Como ser uma Manicure
+                                    </Typography>
+                                </Box>
+                            </Box>
                         </Hidden>
                         <Hidden smDown>
 
-                            <Link underline="none" href="#inicio">
-                                <Avatar alt="Logo do Como ser uma Manicure" src={logo} />
-                            </Link>
-
-                            <Typography 
-                                component="li" 
+                            <Box 
+                                component="ul" 
                                 sx={{ 
-                                    flexGrow: 1,
-                                    listStyle: "none",
-                                    fontWeight: "500",
-                                    fontFamily: "Roboto",
-                                    paddingLeft: "1rem" 
+                                    width: "100%", 
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "space-evenly"
                                 }}
                             >
-                                Como ser uma Manicure
-                            </Typography>
-                            
-                            <Link underline="none" href="#sobre" sx={{color: "#2c2525"}}>
-                                <Button color="inherit">
-                                    <Typography 
-                                        component="li" 
-                                        sx={{ 
-                                            listStyle: "none",
-                                            fontWeight: "500",
-                                            fontFamily: "Roboto" 
-                                        }}
-                                    >
-                                        Sobre nós
-                                    </Typography>
-                                </Button>
-                            </Link>
-                            
-                            <Link underline="none" href="#cursos" sx={{color: "#2c2525"}}>
-                                <Button color="inherit">
-                                    <Typography 
-                                        component="li" 
-                                        sx={{ 
-                                            listStyle: "none",
-                                            fontWeight: "500",
-                                            fontFamily: "Roboto" 
-                                        }}
-                                    >
-                                        Cursos
-                                    </Typography>
-                                </Button>
-                            </Link>
+                                <Link underline="none" href="#inicio">
+                                    <Avatar alt="Logo do Como ser uma Manicure" src={logo} />
+                                </Link>
 
-                            <Link underline="none" href="#vantagens" sx={{color: "#2c2525"}}>
-                                <Button color="inherit">
-                                    <Typography 
+                                <Typography 
+                                    variant="li" 
+                                    sx={{ 
+                                        flexGrow: 1,
+                                        listStyle: "none",
+                                        fontWeight: "500",
+                                        fontFamily: "Roboto",
+                                        paddingLeft: "1rem" 
+                                    }}
+                                >
+                                    Como ser uma Manicure
+                                </Typography>
+                                
+                                <Link underline="none" href="#sobre" sx={{color: "#2c2525"}}>
+                                    <Button 
+                                        component="li" 
+                                        color="inherit" 
+                                        sx={{ 
+                                            listStyle: "none",
+                                            fontWeight: "500",
+                                            fontFamily: "Roboto" 
+                                        }}
+                                    >    
+                                        Sobre nós
+                                    </Button>
+                                </Link>
+                                
+                                <Link underline="none" href="#cursos" sx={{color: "#2c2525"}}>
+                                    <Button 
+                                        color="inherit" 
                                         component="li" 
                                         sx={{ 
                                             listStyle: "none",
@@ -175,14 +187,27 @@ function MainMenu() {
                                             fontFamily: "Roboto" 
                                         }}
                                     >
+                                        Cursos 
+                                    </Button>
+                                </Link>
+
+                                <Link underline="none" href="#vantagens" sx={{color: "#2c2525"}}>
+                                    <Button 
+                                        color="inherit" 
+                                        component="li" 
+                                        sx={{ 
+                                            listStyle: "none",
+                                            fontWeight: "500",
+                                            fontFamily: "Roboto" 
+                                        }}
+                                    >    
                                         Vantagens
-                                    </Typography>
-                                </Button>
-                            </Link>
-                            
-                            <Link underline="none" href="#perguntas" sx={{color: "#2c2525"}}>
-                                <Button color="inherit">
-                                    <Typography 
+                                    </Button>
+                                </Link>
+                                
+                                <Link underline="none" href="#perguntas" sx={{color: "#2c2525"}}>
+                                    <Button 
+                                        color="inherit" 
                                         component="li" 
                                         sx={{ 
                                             listStyle: "none",
@@ -191,9 +216,9 @@ function MainMenu() {
                                         }}
                                     >
                                         Perguntas Frequentes
-                                    </Typography>
-                                </Button>
-                            </Link>
+                                    </Button>
+                                </Link>
+                            </Box>
                             
                         </Hidden>  
                     </Toolbar>
