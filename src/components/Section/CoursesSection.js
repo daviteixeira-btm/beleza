@@ -200,6 +200,7 @@ function CoursesSection() {
 
       <Product
         image={cursoEspecializacaoEmCutilagemParaManicure}
+        altImage="capa do curso de especialização em cutilagem para manicure"
         titulo="Curso Especialização para Manicure e Pedicure com Faby Cardoso"
         nota="5.0"
         ratingValue={5.0}
@@ -220,6 +221,7 @@ function CoursesSection() {
 
       <Product
         image={cursoEspecialistaEmDesignDeUnhas}
+        altImage="capa do curso de especialista em designer de unhas"
         titulo="Curso Especialista em Designer de Unhas"
         nota="4.9"
         ratingValue={4.9}
@@ -240,6 +242,7 @@ function CoursesSection() {
 
       <Product
         image={cursoDeManicure}
+        altImage="capa do curso para iniciantes de manicure e pedicure com a Faby Cardoso"
         titulo="Curso para Iniciantes de Manicure e Pedicure com Faby Cardoso"
         nota="4.8"
         ratingValue={4.8}
@@ -260,6 +263,7 @@ function CoursesSection() {
 
       <Product
         image={cursoEscolaDesignerDeUnhas}
+        altImage="capa do curso de escola design de unhas"
         titulo="Curso Escola Design de Unhas"
         nota="4.7"
         ratingValue={4.7}
@@ -280,6 +284,7 @@ function CoursesSection() {
 
       <Product
         image={cursoAlongamentoDeUnhas}
+        altImage="capa do curso de alongamento de unhas com a Paola Chaves"
         titulo="Curso Alongamento de Unhas com Paola Chaves"
         nota="4.6"
         ratingValue={4.6}
@@ -300,6 +305,7 @@ function CoursesSection() {
 
       <Product
         image={cursoDeCutilagemRussa}
+        altImage="capa do curso de cutilagem russa"
         titulo="Curso de Cutilagem Russa"
         nota="4.6"
         ratingValue={4.6}
