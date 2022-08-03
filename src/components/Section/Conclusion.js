@@ -43,7 +43,7 @@ function Conclusion() {
           dos ensinamentos e técnicas passados pelas instrutoras. Assim, se você
           deseja aprender sobre designer de unhas online, não faltam opções.
           Desta forma, então{" "}
-          <b>espero de coração que este artigo tenha ajudado você</b> a
+          <b>esperamos de coração que este artigo tenha ajudado você</b> a
           descobrir qual curso online de manicure e designer de unhas é o ideal
           para você!
         </Typography>
