@@ -17,7 +17,7 @@ function Footer() {
       <Grid item>
         <Typography 
           p={3} 
-          variant="h4" 
+          variant="h3" 
           sx={{
             fontWeight: "500",
             fontSize: ".8rem",
