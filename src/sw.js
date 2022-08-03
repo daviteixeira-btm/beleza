@@ -9,7 +9,6 @@ window.self.addEventListener('install', (event) => {
           './',
           './public/index.html',
           './public/favicon_io/',
-          './public/sitemap_index.xml',
           './src/imgages/',
           './src/sw.js',
           './src/App.css',
