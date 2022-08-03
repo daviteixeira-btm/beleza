@@ -45,6 +45,7 @@ function FirstSection() {
         />
         <Box
           src={Woman}
+          alt="Uma mulher sorrindo e sentanda com um notebook no colo. Em sua mão direita, ela olha para o seu smartphone."
           component="img"
           sx={{
             top: "9.9rem",
@@ -81,7 +82,7 @@ function FirstSection() {
           fontSize="1.3rem"
           sx={{ 
             color: "#2c2525",
-            fontWeight: "500",
+            fontWeight: "400",
             fontFamily: "Roboto" 
           }}
         >
