@@ -47,6 +47,7 @@ function Product(props) {
               <CardMedia 
                 component="img" 
                 image={props.image}
+                alt={props.altImage}
               />
             </Card>
           </Link>
